@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">HW</string>
+    <string-array name="titles_all">
+        <item>Welcome!</item>
+        <item>Hello World!</item>
+        <item>Android!</item>
+    </string-array>
+    <string-array name="messages_all">
+        <item>Welcome to the world of Android!</item>
+        <item>Hello World! Welcome!</item>
+        <item>I love Android!</item>
+    </string-array>
+    <string-array name="titles">
+        <item>Welcome!</item>
+        <item>Hello World!</item>
+    </string-array>
+    <string-array name="messages">
+        <item>Welcome to the world of Android!</item>
+        <item>Hello World! Welcome!</item>
+    </string-array>
+    <string name="text_url"><u>http://info.tsinghua.edu.cn</u></string>
+    <string name="text_map"><u>清华大学</u></string>
+    <string name="share_text_with">Share this text with:</string>
+    <string name="tab_label1">全部动态</string>
+    <string name="tab_label2">已关注用户动态</string>
+    <string name="backend_url">http://192.168.1.10:8000/</string>
+    <string name="image_loc">/storage/emulated/0/Pictures/download_tmp/</string>
+    <string name="music_loc">/storage/emulated/0/Music/download_tmp/</string>
+    <string name="video_loc">/storage/emulated/0/Movies/download_tmp/</string>
+</resources>

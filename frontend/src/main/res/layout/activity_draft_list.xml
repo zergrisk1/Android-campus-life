@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Post.DraftActivity">
+
+    <TextView
+        android:id="@+id/DraftListLabel"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:text="草稿列表"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ListView
+        android:id="@+id/draft_list_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DraftListLabel" />
+
+    <ImageView
+        android:id="@+id/empty_tray_draft_list"
+        android:layout_width="84dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="299dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DraftListLabel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty_tray" />
+
+    <TextView
+        android:id="@+id/empty_txt_draft_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="空空如也"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_tray_draft_list" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

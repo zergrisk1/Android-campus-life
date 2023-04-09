@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.OtherUserProfileActivity">
+
+    <TextView
+        android:id="@+id/personalPageTxt_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="个人主页"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/followingListLabel" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/personal_page"
+        app:layout_constraintStart_toEndOf="@+id/followingListTxt_other"
+        app:layout_constraintTop_toBottomOf="@+id/followingListLabel" />
+
+    <TextView
+        android:id="@+id/followingListLabel"
+        android:layout_width="204dp"
+        android:layout_height="46dp"
+        android:text="个人简介"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <ImageView
+        android:id="@+id/profilePic_other"
+        android:layout_width="105dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/followingListLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/person" />
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="用户名"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic_other" />
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="邮箱"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameLabel" />
+
+    <TextView
+        android:id="@+id/profileDescLabel"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="简介"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+
+    <TextView
+        android:id="@+id/profileDesc_other"
+        android:layout_width="344dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileDescLabel" />
+
+    <TextView
+        android:id="@+id/username_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/usernameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/profilePic_other" />
+
+    <TextView
+        android:id="@+id/email_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/emailLabel"
+        app:layout_constraintTop_toBottomOf="@+id/username_other" />
+
+    <TextView
+        android:id="@+id/followingListTxt_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="关注列表"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/followingListLabel" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followingListLabel" />
+
+    <Button
+        android:id="@+id/follow_unfollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="关注/取关"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileDesc_other" />
+
+    <Button
+        android:id="@+id/block_unblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="屏蔽/解除屏蔽"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileDesc_other" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
